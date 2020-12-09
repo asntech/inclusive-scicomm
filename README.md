@@ -1,1 +1,1 @@
-# A call to expunge non-inclusive terms from science and beyond
+# Let's eradicate non-inclusive terms from science
