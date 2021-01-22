@@ -83,8 +83,8 @@ print(plot_S1)
 save_plot(paste0(project_path,"figures/","Figure_S1.pdf"), plot_S1, base_height=6, base_width =8)
 
 colnames(term_trends) <- c('year','total_hits_in_epmc','terms_blacklist_whitelist','terms_master_slave','terms_master_tfs','term_slave')
-
-write.table(term_trends,paste0(project_path,"data/","Figure_1_S1.tsv"), quote = FALSE, row.names = FALSE, sep = "\t")
+write.table(term_trends[c("year","total_hits_in_epmc","terms_blacklist_whitelist","terms_master_slave")],paste0(project_path,"data/","Figure_1.tsv"), quote = FALSE, row.names = FALSE, sep = "\t")
+write.table(term_trends[c("year","total_hits_in_epmc","terms_master_tfs","term_slave")],paste0(project_path,"data/","Figure_S1.tsv"), quote = FALSE, row.names = FALSE, sep = "\t")
 
 
 ################  Count articles per journal title ####################
